@@ -47,7 +47,7 @@ const SignIn = () => {
     <Form method="POST" onSubmit={hadleSubmit}>
       <h2>Sign Into Your Account</h2>
       <Error error={error} />
-      <fieldset>
+      <fieldset aria-busy={loading}>
         <label htmlFor="email">
           Email
           <input
